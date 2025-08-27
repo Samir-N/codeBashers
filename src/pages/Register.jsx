@@ -2,22 +2,24 @@ import React from 'react'
 import icon4 from "../assets/images/icon4.jpg"
 const Register = () => {
   return (
-    <div class="h-auto w-auto flex flex-col items-center justify-center py-20 ">
-        <form class="flex flex-col h-auto bg-white shadow-lg rounded-xl py-5 px-5">
-           <div class="justify-center "><img  src={icon4}></img></div>
+    <div class="h-auto w-auto flex flex-col items-center justify-center text-center py-20 ">
+        <form class="flex flex-col  h-auto bg-white shadow-lg rounded-xl py-5 px-5">
+           <div class=" flex justify-center "><img  src={icon4}></img></div>
           <div class="bg-white">
+            
             <h2 class="font-semibold">Create Your Account</h2>
             <p>Join thousands of listeners and tutors today</p>
             </div> 
-           <div>
+
+           <div className='flex flex-col'>
             First Name:<input type='text' placeholder='Samir' name='first' required></input>
             Second Name:<input type='text' placeholder='Niroula' name='second' required></input>
            </div>
-           <div>
+           <div className='flex flex-col'>
             Email:<input type='email' placeholder='Your email address' name='email'></input>
 
            </div>
-           <div>
+           <div className='flex flex-col '>
            Password:<input type='password' placeholder='Create a strong password' name='email'></input>
           </div>
           <span>Password must be at least 8 characters with an Uppercase,lowercase and numbers</span>
