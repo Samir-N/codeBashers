@@ -6,6 +6,8 @@ import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import PageNotFound from './pages/PageNotFound';
+import About from './pages/About';
+import Services from './pages/Services';
 
 function App() {
 
@@ -18,13 +20,21 @@ function App() {
             path:'/',
             element:<LandingPage />
           },
+           {
+            path:'/Services',
+            element:<Services />
+          },
             {
-            path:'Login',
+            path:'/Login',
             element:<Login/>
           },
             {
             path:'Register',
             element:<Register/>
+          },
+            {
+            path:'About',
+            element:<About/>
           },
           
         ]

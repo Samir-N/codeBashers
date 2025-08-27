@@ -32,7 +32,7 @@ const LandingPage = () => {
      
     <div className='grid md:grid-cols-2  items-center  w-full'>
 
-          <Link to={'/Register'}><button className='primary-btn py-5 w-full  relative'>
+          <Link to={'/Register'}><button className='secondary-btn py-5 w-full  '>
              <icons.getStarted size={30} className='absolute '/> 
              Get Started Now</button></Link>
         
@@ -51,7 +51,6 @@ const LandingPage = () => {
 
 
     <section>
-      <About />
     </section>
     </>
   )
