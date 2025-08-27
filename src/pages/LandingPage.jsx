@@ -1,5 +1,8 @@
 import React from 'react'
 import heroPicture from '../assets/Images/heroPicture.png'
+import { Link } from 'react-router-dom'
+import {icons} from '../util/icons'
+import About from './About'
 const LandingPage = () => {
   return (
     <>
@@ -27,11 +30,12 @@ const LandingPage = () => {
 
          <p className='pb-10 text-left'>Discover qualified tutors, schedule flexible sessions, and accelerate your learning journey with our innovative platform designed for modern education.</p>
      
-    <div className='grid md:grid-cols-2 gap-5 items-center  w-[100%]'>
+    <div className='grid md:grid-cols-2  items-center  w-full'>
 
-          <button className='primary-btn py-5  relative'>  Sign up as student</button>
-
-          <button className='secondary-btn py-5 relative'>Sign up as tutor</button>
+          <Link to={'/Register'}><button className='primary-btn py-5 w-full  relative'>
+             <icons.getStarted size={30} className='absolute '/> 
+             Get Started Now</button></Link>
+        
 
          </div>
       </div>
@@ -45,8 +49,9 @@ const LandingPage = () => {
 </div>
     </section>
 
+
     <section>
-      
+      <About />
     </section>
     </>
   )

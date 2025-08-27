@@ -5,6 +5,7 @@ import Layout from './layout/Layout';
 import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
 
@@ -25,8 +26,13 @@ function App() {
             path:'Register',
             element:<Register/>
           },
+          
         ]
       },
+       {
+            path:'*',
+            element:<PageNotFound/>
+          },
 
     ]
   );
