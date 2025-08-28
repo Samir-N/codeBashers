@@ -1,6 +1,10 @@
-import { FaArrowRight  } from 'react-icons/fa';
-export const icons = {
-    getStarted:FaArrowRight 
-}
+// src/utils/icons.js
+import { FaArrowRight, FaBars, FaTimes } from 'react-icons/fa';
 
-export default icons
+export const icons = {
+    getStarted: FaArrowRight, 
+    menuOpen: FaBars,         
+    menuClose: FaTimes   
+};
+
+export default icons;

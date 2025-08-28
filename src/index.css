@@ -6,7 +6,7 @@
 @layer base{
 
     li{ 
-        @apply list-none text-[24px] font-semibold text-[#4B4949] cursor-pointer
+        @apply list-none text-[24px] font-semibold text-[#4B4949] cursor-pointer hover:text-[#6975DD]
     }
     h1{
         @apply text-[70px] font-semibold 
@@ -16,7 +16,11 @@
     }
 
     p{
-        @apply text-[26.11px] text-[#4B5563] 
+        @apply text-[24px] text-[#4B5563] 
+    }
+
+    h3{
+        @apply text-[30px] font-semibold py-5
     }
 
    header{

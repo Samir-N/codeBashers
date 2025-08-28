@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
+function Footer() {
   return (
-    <footer>
-      <h1>Footer</h1>
-    </footer>
+    <div>
+      
+    </div>
   )
 }
 

@@ -2,11 +2,10 @@ import React from 'react'
 import heroPicture from '../assets/Images/heroPicture.png'
 import { Link } from 'react-router-dom'
 import {icons} from '../util/icons'
-import About from './About'
 const LandingPage = () => {
   return (
     <>
-    <section className='bg-[#EEF3FF] h-auto pt-30 pb-60 max-w-[2000px] mx-auto flex'>
+    <section className='bg-[#EEF3FF] h-auto pt-30 pb-60 max-w-[2000px] mx-auto flex '>
       <div className='max-w-[1580px] mx-auto '>
     <div className='grid lg:grid-cols-2 grid-cols-1 gap-10 items-center  h-full'>
 
@@ -32,7 +31,7 @@ const LandingPage = () => {
      
     <div className='grid md:grid-cols-2  items-center  w-full'>
 
-          <Link to={'/Register'}><button className='secondary-btn py-5 w-full  '>
+          <Link to={'/Register'}><button className='primary-btn py-5 w-full  '>
              <icons.getStarted size={30} className='absolute '/> 
              Get Started Now</button></Link>
         
