@@ -6,7 +6,7 @@
 @layer base{
 
     li{ 
-        @apply list-none text-[24px] font-semibold text-[#4B4949] cursor-pointer hover:text-[#6975DD]
+        @apply list-none text-[20px] font-semibold text-[#4B4949] cursor-pointer hover:text-[#6975DD]
     }
     h1{
         @apply text-[70px] font-semibold 
@@ -20,22 +20,22 @@
     }
 
     h3{
-        @apply text-[30px] font-semibold py-5
+        @apply text-[30px] font-semibold py-5 
     }
 
    header{
-    @apply max-w-[2000px] mx-auto w-full
+    @apply max-w-[2000px] mx-auto w-full px-10 
    }
    main {
-    @apply max-w-[2000px] mx-auto
+    @apply max-w-[2000px] mx-auto   
    }
    footer{
-    @apply h-[100vh] max-w-[2000px] mx-auto w-full bg-red-400 px-5
+    @apply h-auto max-w-[2000px] mx-auto w-full px-20
    }
    
 
    section{
-    @apply px-10
+    @apply px-10 mx-auto
    };
 
    
@@ -48,7 +48,7 @@
 
 @layer components{
    .primary-btn{
-    @apply  text-[24px] bg-gradient-to-r from-[#6975DD] to-[#754EA7] text-white font-semibold px-8 rounded-full px-8 py-3 cursor-pointer
+    @apply  text-[20px] bg-gradient-to-r from-[#6975DD] to-[#754EA7] text-white font-semibold lg:px-8 px-5  rounded-full px-8 py-3 cursor-pointer
     transition-all duration-200 hover:-translate-y-2
     ;
    }

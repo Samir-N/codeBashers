@@ -8,7 +8,7 @@ const Header = () => {
 
 
   return (
-    <header className="flex z-40 bg-white top-0 sticky items-center justify-between py-5 px-5">
+    <header className="flex z-40 bg-white top-0 sticky items-center justify-between py-5">
       <Link to="/" className="flex items-center gap-5 hover:opacity-80 transition-opacity">
         <img src={logo} height={80} width={80} alt="Logo" />
         <h2 className="lg:text-[30px] hidden lg:block text-indigo-600 font-bold ">Smart Tutor</h2>
@@ -25,13 +25,17 @@ const Header = () => {
           toggle ? 'flex' : 'hidden'
         } flex-col lg:flex-row lg:flex items-center gap-10 absolute lg:static right-0  lg:w-auto w-[50%] top-30 bg-white shadow-lg lg:shadow-none border-2 border-gray-300 right-5 lg:border-0 rounded-xl px-5 py-5`}
       >
-        <nav>
-          <ul className="flex flex-col lg:flex-row items-center gap-10">
-            <Link to="/" onClick={() => setToggle(false)}><li>Home</li></Link>
-          
-            <Link to="/Services" onClick={() => setToggle(false)}><li>Services</li></Link>
-          </ul>
-        </nav>
+  <nav>
+  <ul className="flex flex-col lg:flex-row items-center gap-10">
+    <Link to="/" onClick={() => setToggle(false)}>
+      <li className="text-[24px]">Home</li>
+    </Link>
+    <Link to="/Services" onClick={() => setToggle(false)}>
+      <li className="text-[24px]">Services</li>
+    </Link>
+  </ul>
+</nav>
+
 
   
     

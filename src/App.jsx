@@ -6,7 +6,7 @@ import Register from './pages/Register';
 import PageNotFound from './pages/PageNotFound';
 import Services from './pages/Services';
 import TutorDashboard from './pages/tutorDashboard';
-import StudentDashboard from './pages/tutorDashboard';
+import StudentDashboard from './pages/studentDashboard';
 
 
 function App() {

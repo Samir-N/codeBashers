@@ -34,8 +34,16 @@ const Register = () => {
     }
   }; 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 py-5">
-      <form ref={formData} onSubmit={handleSubmit} className="flex flex-col gap-6 bg-white shadow-2xl rounded-2xl p-8 w-[400px]">
+    <div className="flex justify-center pt-2 pb-20  ">
+      <form ref={formData} onSubmit={handleSubmit} className="
+  flex flex-col gap-4 py-10
+  bg-white sm:shadow-2xl rounded-2xl 
+ md:px-10
+  w-full max-w-[1000px] sm:max-w-md
+  mx-auto
+  min-h-0 px-20
+"
+>
         
         <div className="flex justify-center">
           <img
@@ -52,8 +60,8 @@ const Register = () => {
           </p>
         </div>
 
-        <div className="flex gap-4">
-          <div className="flex flex-col w-1/2">
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col w-full">
             <label className="text-sm font-medium text-gray-600 mb-1">First Name</label>
             <input
               type="text"
@@ -62,7 +70,7 @@ const Register = () => {
               placeholder="First Name"
             />
           </div>
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-full">
             <label className="text-sm font-medium text-gray-600 mb-1">Last Name</label>
             <input
               type="text"

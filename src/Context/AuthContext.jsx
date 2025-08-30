@@ -1,7 +1,9 @@
     import { createContext, useContext, useState } from 'react';
     import { auth, db } from '../firebase/firebase.js';
-    import { onAuthStateChanged, signInWithEmailAndPassword,createUserWithEmailAndPassword, signOut 
-} from 'firebase/auth';
+
+    import {onAuthStateChanged,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut} from 'firebase/auth';
+
+
 import { doc, setDoc } from 'firebase/firestore';
     const AuthContext = createContext();
 
@@ -63,22 +65,10 @@ import { doc, setDoc } from 'firebase/firestore';
     };
 
     const logout = () => {
-        try {
-        console.log("Logout Tried");
-        setUser(null);
-        } catch (err) {
-        console.log("Logout Error Occurred: " + err);
-        }
+      console.log("Logging out");
+    }
 
 
-          const forgotPassword = () => {
-        try {
-        console.log("Logout Tried");
-        setUser(null);
-        } catch (err) {
-        console.log("Logout Error Occurred: " + err);
-        }
-    };
 
     const authData = {
         user,
@@ -96,8 +86,7 @@ import { doc, setDoc } from 'firebase/firestore';
         </AuthContext.Provider>
     );
     
-    }
-};
+    };
 
     export const useAuth = () =>  useContext(AuthContext);
 

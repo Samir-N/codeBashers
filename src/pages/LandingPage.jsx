@@ -5,8 +5,8 @@ import {icons} from '../util/icons'
 const LandingPage = () => {
   return (
     <>
-    <section className='bg-[#EEF3FF] h-auto pt-30 pb-60 max-w-[2000px] mx-auto flex '>
-      <div className='max-w-[1580px] mx-auto '>
+    <section className='bg-[#EEF3FF] h-auto pt-30 pb-60 max-w-[2000px] mx-auto flex  '>
+      <div className='max-w-[1580px] mx-auto px-5'>
     <div className='grid lg:grid-cols-2 grid-cols-1 gap-10 items-center  h-full'>
 
       <div
@@ -29,10 +29,10 @@ const LandingPage = () => {
 
          <p className='pb-10 text-left'>Discover qualified tutors, schedule flexible sessions, and accelerate your learning journey with our innovative platform designed for modern education.</p>
      
-    <div className='grid md:grid-cols-2  items-center  w-full'>
+    <div className='grid md:grid-cols-1 items-center   w-full'>
 
-          <Link to={'/Register'}><button className='primary-btn py-5 w-full  '>
-             <icons.getStarted size={30} className='absolute '/> 
+          <Link to={'/Register'}><button className='primary-btn relative px-20 py-4 '>
+             <icons.getStarted size={30} className='absolute left-10 '/> 
              Get Started Now</button></Link>
         
 
